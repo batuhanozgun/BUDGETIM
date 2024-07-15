@@ -1,0 +1,33 @@
+.header {
+    background-color: #042141; /* Soft lacivert */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: fixed; /* Sabit konum */
+    top: 0;
+    z-index: 1000; /* Menülerin üzerinde görünmesi için z-index */
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+  

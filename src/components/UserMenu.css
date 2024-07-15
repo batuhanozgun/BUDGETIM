@@ -1,0 +1,18 @@
+.user-menu {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .user-menu nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .user-menu nav a:hover {
+    text-decoration: underline;
+  }
+
+  

@@ -1,0 +1,19 @@
+/* Profile menüsü stilleri */
+.profile-menu {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px; /* Header'ın hemen altında görünecek şekilde boşluk bırak */
+  }
+  
+  .profile-menu nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  .profile-menu nav a:hover {
+    text-decoration: underline;
+  }
+  
