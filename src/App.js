@@ -4,6 +4,7 @@ import { auth, db, onAuthStateChanged, doc, getDoc } from './firebase-config';
 import Header from './components/Header';
 import Login from './components/Login';
 import Register from './components/Register';
+import DashboardLayout from './components/DashboardLayout';
 import Dashboard from './components/Dashboard';
 import ManageAccounts from './components/ManageAccounts';
 import ManageAccountsLayout from './components/ManageAccountsLayout';
@@ -25,8 +26,9 @@ import TransactionTypes from './components/TransactionTypes';
 import CreateUser from './components/CreateUser';
 import EditUser from './components/EditUser';
 import UserTypes from './components/UserTypes';
-import './global.css'; // Global CSS dosyasını dahil edin
-import './index.css';  // Optimize edilmiş index.css dosyasını dahil edin
+import CreditCardExtres from './components/CreditCardExtres'; // Yeni bileşen eklendi
+import './global.css';
+import './index.css';
 
 function App() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -55,7 +57,13 @@ function App() {
           <Route path="/" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/*" element={<DashboardLayout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="overview" element={<Dashboard />} />
+            <Route path="reports" element={<Dashboard />} />
+            <Route path="settings" element={<Dashboard />} />
+            <Route path="credit-card-extres" element={<CreditCardExtres />} /> {/* Yeni rota eklendi */}
+          </Route>
           <Route path="/manage-accounts" element={<ManageAccountsLayout />}>
             <Route path="cash" element={<CashAccounts />} />
             <Route path="bank" element={<BankAccounts />} />

@@ -9,6 +9,7 @@ const DashboardMenu = () => {
         <Link to="/dashboard/overview">Overview</Link>
         <Link to="/dashboard/reports">Reports</Link>
         <Link to="/dashboard/settings">Settings</Link>
+        <Link to="/dashboard/credit-card-extres">Credit Card Extres</Link> {/* Yeni alan eklendi */}
       </nav>
     </div>
   );

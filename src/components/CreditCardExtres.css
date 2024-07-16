@@ -1,0 +1,17 @@
+.credit-card-extres-page {
+    padding: 20px;
+  }
+  
+  .credit-card-extres-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .credit-card-extres-page li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
