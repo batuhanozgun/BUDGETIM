@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { auth, signInWithEmailAndPassword } from '../firebase-config';
+import { auth, signInWithEmailAndPassword, setPersistence, browserLocalPersistence, browserSessionPersistence } from '../firebase-config';
 import Header from './Header';
 import { getErrorMessage } from '../utils/errorMessages';
 import Message from './Message';
@@ -8,6 +8,7 @@ import Message from './Message';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ function Login() {
     setSuccess('');
 
     try {
+      await setPersistence(auth, rememberMe ? browserLocalPersistence : browserSessionPersistence);
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
@@ -42,10 +44,14 @@ function Login() {
     <div>
       <Header />
       <div className="content">
-        <form onSubmit={handleLogin}>
+        <form className="login-form" onSubmit={handleLogin}>
           <h2>Login</h2>
           <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} required />
           <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} required />
+          <div className="remember-me">
+            <input type="checkbox" id="rememberMe" checked={rememberMe} onChange={(e) => setRememberMe(e.target.checked)} />
+            <label htmlFor="rememberMe">Remember Me</label>
+          </div>
           <button type="submit">Login</button>
           <Link to="/password-reset" className="forgot-password-link">Forgot Password?</Link>
           {error && <Message type="error" message={error} />}

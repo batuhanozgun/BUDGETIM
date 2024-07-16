@@ -1,13 +1,13 @@
 import React from 'react';
-import './ProfileMenu.css'; // Menü stilleri için
+import { Outlet } from 'react-router-dom';
+import './Profile.css'; // Menü stilleri için
 import ProfileMenu from './ProfileMenu';
 
 const Profile = () => {
   return (
     <div className="profile-page content">
       <ProfileMenu />
-      <h1>Profile</h1>
-      <p>Welcome to your profile page.</p>
+      <Outlet />
     </div>
   );
 }

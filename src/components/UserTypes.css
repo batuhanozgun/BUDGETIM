@@ -1,0 +1,67 @@
+/* UserTypes.css */
+.user-types-page {
+  text-align: center;
+}
+
+.user-types {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-types h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.user-types input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.user-types button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.user-types button:hover {
+  background-color: #0056b3;
+}
+
+.user-types ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-types li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-types li button {
+  background-color: #dc3545;
+}
+
+.user-types li button:hover {
+  background-color: #c82333;
+}

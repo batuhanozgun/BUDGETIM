@@ -1,4 +1,5 @@
 import React from 'react';
+import './AdminMenu'; // Menü stilleri için
 import AdminMenu from './AdminMenu';
 
 const Admin = () => {
@@ -6,7 +7,7 @@ const Admin = () => {
     <div className="admin-page content">
       <AdminMenu />
       <h1>Admin Page</h1>
-      <p>Welcome to the admin page. Only admin users can see this.</p>
+      <p>Welcome to the admin page. Only admiasdasdasdasdasdasdasdasdasdn users can see this.</p>
     </div>
   );
 }

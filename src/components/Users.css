@@ -1,0 +1,83 @@
+/* Users.css */
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 12px; /* Font boyutunu büyüttük */
+  color: #333; /* Yazı rengini koyulaştırdık */
+  
+}
+
+.users-table th, .users-table td {
+  padding: 12px 15px; /* Padding'i artırdık */
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap; /* Kelime kaymasını önlüyoruz */
+}
+
+.users-table th {
+  background-color: #007bff; /* Başlık hücrelerinin arka plan rengini değiştirdik */
+  color: #fff; /* Başlık hücrelerinin yazı rengini beyaz yaptık */
+  text-transform: uppercase; /* Başlık hücrelerinin yazılarını büyük harf yaptık */
+  letter-spacing: 1px; /* Harfler arası boşluk ekledik */
+}
+
+.users-table tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.users-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer; /* Satır üzerine gelince işaretçiyi değiştirdik */
+}
+
+.users-table button {
+  margin-right: 5px;
+  padding: 5px 10px; /* Buton padding'ini artırdık */
+  border: none;
+  border-radius: 5px; /* Köşe yuvarlaklığını artırdık */
+  cursor: pointer;
+  font-size: 12px; /* Buton font boyutunu büyüttük */
+  background-color: #28a745; /* Buton arka plan rengini yeşil yaptık */
+  color: #fff; /* Buton yazı rengini beyaz yaptık */
+}
+
+.users-table button:hover {
+  background-color: #218838; /* Hover durumunda buton rengini değiştirdik */
+  opacity: 0.9;
+}
+
+/* Yeni kullanıcı oluşturma formunun stili */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Gölge ekledik */
+}
+
+form input {
+  width: 100%; /* Form inputlarının genişliğini tam yaptık */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Buton rengini değiştirdik */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; /* Yazılarını büyük harf yaptık */
+}
+
+form button:hover {
+  background-color: #0056b3; /* Hover durumunda buton rengini değiştirdik */
+}

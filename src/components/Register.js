@@ -32,6 +32,7 @@ function Register() {
       await sendEmailVerification(user);
 
       await setDoc(doc(db, 'users', user.uid), {
+        uid: user.uid, // UID'yi ekliyoruz
         firstName,
         lastName,
         email,

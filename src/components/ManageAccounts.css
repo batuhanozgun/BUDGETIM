@@ -1,0 +1,20 @@
+.manage-accounts-page {
+    padding: 20px;
+  }
+  
+  .manage-accounts-menu {
+    margin-bottom: 20px;
+  }
+  
+  .manage-accounts-page h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .manage-accounts-page p {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  

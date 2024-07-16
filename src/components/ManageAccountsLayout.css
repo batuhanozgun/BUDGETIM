@@ -1,0 +1,10 @@
+.manage-accounts-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .manage-accounts-content {
+    flex: 1;
+    padding: 20px;
+  }
+  

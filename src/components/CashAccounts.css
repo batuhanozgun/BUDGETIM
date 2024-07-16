@@ -1,0 +1,126 @@
+/* CashAccounts.css */
+
+/* Global styles are inherited */
+
+.cash-accounts-page {
+  text-align: center;
+}
+
+.cash-accounts-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cash-accounts-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.cash-accounts-list {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cash-accounts-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.cash-accounts-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cash-accounts-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cash-accounts-list li span {
+  flex: 1;
+  text-align: left;
+}
+
+.cash-accounts-list li button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.cash-accounts-list li button.edit {
+  background-color: #28a745;
+}
+
+.cash-accounts-list li button.edit:hover {
+  background-color: #218838;
+}
+
+.cash-accounts-list li button.delete {
+  background-color: #dc3545;
+}
+
+.cash-accounts-list li button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Modal Styles */
+.edit-cash-account-modal {
+  position:absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.edit-cash-account-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+}

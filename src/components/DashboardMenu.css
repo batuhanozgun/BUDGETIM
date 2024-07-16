@@ -1,19 +1,21 @@
-/* Dashboard menüsü stilleri */
 .dashboard-menu {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 50px; /* Header'ın hemen altında görünecek şekilde boşluk bırak */
-  }
-  
-  .dashboard-menu nav a {
-    color: #fff;
-    margin: 0 15px;
-    text-decoration: none;
-  }
-  
-  .dashboard-menu nav a:hover {
-    text-decoration: underline;
-  }
-  
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: left;
+  position: fixed; /* Sabit konum */
+  top: 129px; /* Header'ın altına yerleştirin */
+  left: 0px;
+  width: 100%;
+  z-index: 1000; /* Diğer içeriklerin üstünde görünmesini sağlayın */
+}
+
+.dashboard-menu nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.dashboard-menu nav a:hover {
+  text-decoration: underline;
+}
